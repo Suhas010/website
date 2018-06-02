@@ -9,12 +9,12 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  */
- 
+
  @import "bootstrap/bootstrap.min";
  @import "others/theme";
  @import "others/bootstrap-reset";
  @import "font_awesome/font-awesome";
- @import "others/flexslider"; 
+ @import "others/flexslider";
  @import "bxslider/jquery.bxslider";
  @import "fancybox/jquery.fancybox";
  @import "revolution_slider/rs-style";
@@ -35,4 +35,17 @@
 
 .newsletter-text{
   color: #333333;
+}
+
+#myCarousel .item img{
+  width: 100%!important;
+  margin: 0
+}
+
+.d-flex{
+  display: flex;
+}
+
+.justify-content-center{
+  justify-content: center;
 }
