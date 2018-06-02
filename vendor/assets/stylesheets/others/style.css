@@ -1696,7 +1696,9 @@ a.btn-purchase:hover, a.btn-purchase:focus{
   margin: 10px;
 }
 
-
+.client-header {
+  color: black;
+}
 /*portfolio*/
 
 
