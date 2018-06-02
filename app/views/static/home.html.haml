@@ -20,23 +20,44 @@
 
 .container
   .row.d-flex.justify-content-center.page-header
-    .col-xs-6.col-md-3
+    .col-xs-6.col-md-3.flex-direction-column.margin-15
       %a.thumbnail{:href => "#"}
         = image_tag "Card image grp 01.png"
+      %button.btn Open Source
 
-      %button.btn.button5.justify-content-center Open Source
 
-
-    .col-xs-6.col-md-3
+    .col-xs-6.col-md-3.flex-direction-column.margin-15
       %a.thumbnail{:href => "#"}
         = image_tag "Card image grp 02.png"
-    .col-xs-6.col-md-3
+      %button.btn Open Source
+    .col-xs-6.col-md-3.flex-direction-column.margin-15
       %a.thumbnail{:href => "#"}
         = image_tag "Card image grp 03.png"
+      %button.btn Open Source
 
 .container
   .row
     .col-md-12.col-xs-12
+.parallax1
+  .clients
+    .container
+      .col-lg-12.text-center
+        %ul.list-unstyled
+          %li
+            %a{href: 'portfolio/#Fundamentor'}
+              = image_tag "client_logos/fundamentor_logo.jpg"
+          %li
+            %a{href: 'portfolio/#Altizon Datonis'}
+              = image_tag "client_logos/altizon_logo.png", class: 'logo_width'
+          %li
+            %a{href: 'portfolio/#Educade'}
+              = image_tag "client_logos/educade-logo.png", class: 'logo_width'
+          %li
+            %a{href: 'portfolio/#Phalcomm'}
+              = image_tag "client_logos/phalcomm_logo.png", class: 'logo_width'
+          %li
+            %a{href: 'portfolio/#TourConnect'}
+              = image_tag "client_logos/tourConnectLogo.png", class: 'logo_width'
       = image_tag "Separator.png"
 %br
 %br
