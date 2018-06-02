@@ -3,7 +3,6 @@
     .row
       .col-lg-3.col-sm-3
         %h1 Josh Software
-        .moto Ruby on Rails experts.
         .footer_data
           Josh stands for enthusiasm and passion. We believe Programming is an Art and build Innovative Web Based Applications on an Open Source framework for our world-wide clientele.
         /
@@ -38,22 +37,42 @@
             %h1 stay connected
             %ul.social-link-footer.list-unstyled
               %li
-                %a{:href => "https://facebook.com/joshsoftware", target: "_blank", alt: 'Facebook'}
+                %a{:href => "https://facebook.com/joshsoftware", target: "_blank", alt: 'Facebook', class: 'social-rounded-icon'}
                   %i.icon-facebook
               %li
-                %a{:href => "https://twitter.com/joshsoftware", target: "_blank", alt: 'Twitter'}
+                %a{:href => "https://twitter.com/joshsoftware", target: "_blank", alt: 'Twitter', class: 'social-rounded-icon'}
                   %i.icon-twitter
               %li
-                %a{:href => "http://www.linkedin.com/company/josh-software-private-limited", target: "_blank", alt: 'Linked In'}
+                %a{:href => "http://www.linkedin.com/company/josh-software-private-limited", target: "_blank", alt: 'Linked In',
+                class: 'social-rounded-icon'}
                   %i.icon-linkedin
               %li
-                %a{:href => "https://github.com/joshsoftware", target: "_blank", alt: 'Github'}
+                %a{:href => "https://github.com/joshsoftware", target: "_blank", alt: 'Github', class: 'social-rounded-icon'}
                   %i.icon-github
           .row.footer_links.company
             .col-lg-6.co
               = link_to 'About Us', 'about-us', class: 'pull-left'
             .col-lg-6
               = link_to 'Contact Us', new_contact_path, class: 'pull-right'
+
+    %br
+    .row
+      .text-center.footer_nav_links
+        = link_to 'Home', root_path
+        |
+        = link_to 'Open Source', 'open-source'
+        |
+        = link_to 'Portfolio', 'portfolio'
+        |
+        = link_to 'Clients', root_path
+        |
+        = link_to 'Testimonials', 'testimonials'
+        |
+        = link_to 'Blog', 'http://blog.joshsoftware.com/', target: "_blank"
+        |
+        = link_to 'Team', 'team'
+        |
+        = link_to 'Contact Us', 'contact-us'
     .row
       .copyright.text-center
         Copyright © 2007 - #{Time.now.year} Josh Software Pvt. Ltd.
