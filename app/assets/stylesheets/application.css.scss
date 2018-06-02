@@ -46,6 +46,23 @@
   display: flex;
 }
 
+.flex-direction-column {
+  display: flex!important;
+  flex-direction: column
+}
+
 .justify-content-center{
   justify-content: center;
+}
+
+.page-header {
+  border-bottom: 0px;
+}
+
+.margin-15 {
+  margin: 15px
+}
+
+.border-top-color {
+  border-top-color: #666666;
 }

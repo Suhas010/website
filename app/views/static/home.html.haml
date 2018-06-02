@@ -20,24 +20,24 @@
 
 .container
   .row.d-flex.justify-content-center.page-header
-    .col-xs-6.col-md-3
+    .col-xs-6.col-md-3.flex-direction-column.margin-15
       %a.thumbnail{:href => "#"}
         = image_tag "Card image grp 01.png"
+      %button.btn Open Source
 
-      %button.btn.button5.justify-content-center Open Source
 
-
-    .col-xs-6.col-md-3
+    .col-xs-6.col-md-3.flex-direction-column.margin-15
       %a.thumbnail{:href => "#"}
         = image_tag "Card image grp 02.png"
-    .col-xs-6.col-md-3
+      %button.btn Open Source
+    .col-xs-6.col-md-3.flex-direction-column.margin-15
       %a.thumbnail{:href => "#"}
         = image_tag "Card image grp 03.png"
+      %button.btn Open Source
 
 .container
   .row
     .col-md-12.col-xs-12
-      = image_tag "Separator.png"
 .parallax1
   .clients
     .container
