@@ -21,19 +21,19 @@
 .container
   .row.d-flex.justify-content-center.page-header
     .col-xs-4.col-md-3.flex-direction-column
-      %a.thumbnail{:href => "#"}
+      %a.thumbnail.no-padding{:href => "#"}
         = image_tag "Card image grp 01.png"
-      %button.btn.btn-default.white-button.margin-top-15 OPEN SOURCE
+      = link_to "OPEN SOURCE", 'open-source', class: "btn btn-default white-button margin-top-15"
 
 
     .col-xs-4.col-md-3.flex-direction-column
-      %a.thumbnail{:href => "#"}
+      %a.thumbnail.no-padding{:href => "#"}
         = image_tag "Card image grp 02.png"
-      %button.btn.btn-default.white-button.margin-top-15 OUR WORK
+      = link_to "OUR WORK", 'portfolio', class: "btn btn-default white-button margin-top-15"
     .col-xs-4.col-md-3.flex-direction-column
-      %a.thumbnail{:href => "#"}
+      %a.thumbnail.no-padding{:href => "#"}
         = image_tag "Card image grp 03.png"
-      %button.btn.btn-default.white-button.margin-top-15 CONTACT US
+      = link_to "CONTACT US", 'contact_us', class: "btn btn-default white-button margin-top-15"
 
 %br
 %br
