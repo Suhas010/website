@@ -38,46 +38,6 @@
   .row
     .col-md-12.col-xs-12
       = image_tag "Separator.png"
-.container
-  .row.well
-    .col-md-4
-      .about-testimonial
-        .about-testimonial-author Newsletter
-      %br
-      %br
-      %iframe{src: "http://www.joshsoftware.com/subscribe", height: "410", width: "340", frameborder: "0"}
-    .col-md-4
-      .about-testimonial.boxed-style.about-flexslider
-        %section.slider
-          .flexslider
-            %ul.slides.about-flex-slides
-              - @testimonials.each do |testimonial|
-                %li
-                  .about-testimonial-author #{testimonial[:endorser]}
-                  %span.about-testimonial-company #{testimonial[:company]}
-                  .about-testimonial-content
-                    %p.about-testimonial-quote
-                      #{raw testimonial[:endorsement].split("<wbr>")[0]}
-    .col-md-4
-      .about-testimonial
-        .about-testimonial-author Open Source
-      %br
-      %br
-      %iframe{src: "https://codecuriosity.org/widgets/group/576425c6d1a1cc5504000012", height: "410", width: "340", frameborder: "0"}
-        //.about-testimonial-author Fun at JOSH
-      //#fun.align-center
-      //= image_tag 'loading.gif'
-  .row.well
-    .col-md-6
-    .col-md-12
-      #fun
-        = image_tag 'loading.gif'
-        //.left.carousel-control{href: '#myFunCarousel', "data" => {slide: "prev"}}
-        //%i.glyphicon.glyphicon-chevron-left
-
-        //.right.carousel-control{href: '#myFunCarousel', "data" => {slide: "next"}}
-        //%i.glyphicon.glyphicon-chevron-right
-
 .parallax1
   .clients
     .container
