@@ -75,3 +75,74 @@
 .no-padding{
   padding: 0px;
 }
+
+.typewriter h1  {
+  animation: line1 3s steps(22);
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: 'Source Code Pro', monospace;
+  // font-weight: 800;
+  font-size: 96px;
+  // border-right: 4px solid black;
+  width: 22ch;
+  position: absolute;
+  top: 175px;
+  left: 5%;
+  color: #ffffff;
+}
+
+.typewriter h1:nth-child(2){
+  animation: line2 3s steps(22);
+  position: absolute;
+  top: 275px;
+  left: 5%;
+}
+
+.typewriter h1:nth-child(3){
+  animation: line2 6s steps(22);
+  position: absolute;
+  top: 325px;
+  left: 5%;
+}
+
+.typewriter a {
+  animation: line3 3s ;
+  position: absolute;
+  top: 300px;
+  left: 5%;
+}
+
+.height-480 {
+  background: url(/assets/Banner.png);
+  height: 480px;
+}
+
+@keyframes line1 {
+  0% {
+    width: 0ch ;
+  }
+  100% {
+    width: 22ch;
+  }
+}
+@keyframes line2 {
+  0% {
+    width: 0ch ;
+  }
+  50% {
+    width: 0ch;
+  }
+  100% {
+    width: 22ch;
+  }
+}
+
+@keyframes line3 {
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; }
+}
+
+.gray-color {
+  color: #cccccc!important;
+}

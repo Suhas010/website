@@ -1,22 +1,31 @@
-
 #myCarousel.carousel.slide{"data-ride" => "carousel"}
   %ol.carousel-indicators
     %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
     %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
     %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
-  .carousel-inner
+  .carousel-inner.height-480
     .item.active
-      = image_tag "Banner.png"
+      .typewriter
+        %h1 INOVATION
+        %h1.gray-color IS OUR CULTURE
+
     .item
-      = image_tag "Banner.png"
+      .typewriter
+        %h1
+          TECHNOLOGY
+          %span.gray-color EXPERTS
+        %h1
+          %span.gray-color SOLUTION
+          PROVIDERS
+
     .item
-      = image_tag "Banner.png"
-  %a.left.carousel-control{"data-slide" => "prev", :href => "#myCarousel"}
-    %span.glyphicon.glyphicon-chevron-left
-    %span.sr-only Previous
-  %a.right.carousel-control{"data-slide" => "next", :href => "#myCarousel"}
-    %span.glyphicon.glyphicon-chevron-right
-    %span.sr-only Next
+      .typewriter
+        %h1 OPEN SOURCE
+        %h1.gray-color IS REWARDED HERE
+
+        // %h1
+        // %button.btn.btn-default CONTACT US
+
 
 .container
   .row.d-flex.justify-content-center.page-header
@@ -38,6 +47,7 @@
 %br
 .container
   %hr
+
 .container
   .row
     %h1

@@ -100,7 +100,9 @@
         margin-bottom: 10px;
     }
 
-
+    .typewriter h1 {
+        font-size: 64px!important;
+    }
 
 }
 
@@ -139,6 +141,9 @@
     .carousel-control {
         font-size: 23px;
         line-height: 38px;
+    }
+    .typewriter h1 {
+        font-size: 50px!important;
     }
 }
 
