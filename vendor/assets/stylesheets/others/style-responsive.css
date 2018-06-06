@@ -4,6 +4,10 @@
         margin-right: 2%;
         margin-bottom: 2%;
     }
+
+    .portfolio-body {
+        height: 800px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -104,6 +108,10 @@
         font-size: 64px!important;
     }
 
+    .portfolio-body {
+        height: 800px;
+    }
+
 }
 
 
@@ -144,6 +152,10 @@
     }
     .typewriter h1 {
         font-size: 50px!important;
+    }
+
+    .portfolio-body {
+        height: 1000px;
     }
 }
 

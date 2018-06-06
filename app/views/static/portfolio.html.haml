@@ -1,44 +1,36 @@
 = render 'shared/breadcrumbs', data: nil
 .container
   .row
-    .col-lg-12
-      - [@projects.first].each do |project|
-        .blog-item
-          .row
-            .col-lg-12.col-sm-12
-              %center
-                %h1
-                  = link_to project[:title], project[:url], target: '_blank', id: 'current-title-link'
-          .row
-            .col-lg-2
-            .col-lg-8
-              .blog-img.well
-                %a{href: project[:url], target: '_blank', id: 'current-project-url'}
-                  = image_tag "portfolio/#{project[:image]}", alt: "Screenshot of #{project[:title]}" , id: 'current-poject-image'
-          .row
-            .col-lg-5
-            .col-lg-2
-              .blog-side-item
-                %strong.tags
-                  - if project[:case_study]
-                    %ul.list-unstyled.tagg
-                      %li= link_to "Case study", project[:case_study], target: "_blank", id: 'current-case-study'
-
-          .row
-            .col-md-12
-              %p{id: 'current-description'}= raw project[:description]
-
-  .row
     - @projects.each do |project|
-      .col-lg-3.well.card-well.portifolio-card{data: {title: project[:title], url: project[:url], description: project[:description], 'case-study' => project[:case_study], url: project[:url], image: "assets/portfolio/#{project[:image]}"}}
+      .col-lg-3.well.card-well.portifolio-card{data: project}
         .blog-img{id: project[:title]}
-          %a{href: project[:url], target: '_blank'}
+          %a{href: "#", "data-toggle": "modal", "data-target": "#portfolioModal", "data-project": project }
             = image_tag "portfolio/#{project[:image]}", alt: "Screenshot of #{project[:title]}"
         .row
           %center
             .blog-item.card-item
               %h1
-                = link_to project[:title], project[:url], target: '_blank'
+                = link_to project[:title], "#" , "data-toggle": "modal", "data-target": "#portfolioModal"
       .col-lg-1
 
 
+#portfolioModal.modal.fade{:role => "dialog"}
+  .modal-dialog.modal-lg
+    / Modal content
+    .modal-content
+      .modal-body.portfolio-body
+        #projectCarousel.carousel.slide{ "data-interval" => "false", "data-ride" => "carousel"}
+          .carousel-inner
+            - @projects.each_with_index do |project, index|
+              .item{class: "", id: "item-#{project[:id]}" }
+                = render "static/project",  project: project
+      %a.left.carousel-control{"data-slide" => "prev", :href => "#projectCarousel"}
+        %span.glyphicon.glyphicon-chevron-left.gray-color
+        %span.sr-only Previous
+      %a.right.carousel-control{"data-slide" => "next", :href => "#projectCarousel"}
+        %span.glyphicon.glyphicon-chevron-right.gray-color
+        %span.sr-only Next
+
+
+      .modal-footer
+        %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close

@@ -1234,7 +1234,7 @@ ul.about-flex-slides {
 .blog-item {
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px dashed #9D2322; /*line below each testimonial or opensource */
+  border-bottom: 1px ridge #cccccc; /*line below each testimonial or opensource */
 }
 
 .blog-item a {
@@ -1954,4 +1954,13 @@ ul#filters > .active > span {
 /* Add rounded corners to the top left and the top right corner of the image */
 .card img {
     border-radius: 5px 5px 0 0;
+}
+
+.portfolio-body {
+  height: 575px;
+}
+
+/*  portfolio modal heading padding-bottom 0 */
+.no-padding-bottom {
+  padding-bottom: 0!important;
 }
