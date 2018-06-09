@@ -15,7 +15,7 @@ PROJECTS= [
     case_study: "/portfolio_pdf/QuickInsure.pdf",
     display: true
   },
-  
+=begin
   {
     id: "get-a-limo",
     title: "Get-a-Limo",
@@ -31,8 +31,8 @@ PROJECTS= [
     case_study: "/portfolio_pdf/GetALimoCaseStudy.pdf",
     display: true
   },
-  
-  
+
+=end
   {
     id: "pediatric_network",
     title: "The Pediatric Network",
@@ -48,7 +48,7 @@ PROJECTS= [
     case_study: "/portfolio_pdf/ThePediatricNetworkCaseStudy.pdf",
     display: true
   },
-
+=begin
   {
     id: "zenith",
     title: "Zenith",
@@ -65,7 +65,7 @@ PROJECTS= [
     case_study: "/portfolio_pdf/zenith.pdf",
     display: true
   },
-  
+=end
   {
     id: "we3_health",
     title: "We3Health",
@@ -79,7 +79,7 @@ them.",
     case_study: "/portfolio_pdf/We3health_case_study.pdf",
     display: true
   },
-
+=begin
   {
     id: "groupbuzz",
     title: "Groupbuzz",
@@ -93,7 +93,7 @@ them.",
     case_study: "/portfolio_pdf/group_buzz.pdf",
     display: true
   },
-
+=end
   {
     id: "fundamentor",
     title: "Fundamentor",
@@ -110,6 +110,7 @@ them.",
     case_study: "/portfolio_pdf/CaseStudyFundamentor.pdf",
     display: true
   },
+=begin
   {
     id: "mesitis",
     title: "Mesitis Canopy",
@@ -124,9 +125,9 @@ them.",
         tags: ["Rails 4.1.1", "Ruby 2.1.1","PostgreSQL", "AmCharts", "AWS RDS", "Sidekiq", "Redis"]
     },
     display: true
-  
+
   },
-  
+=end
   {
     id: "kimaya",
     title: "Kimaya NICU",
@@ -142,7 +143,7 @@ them.",
     },
     display: true
   },
-
+=begin
   {
     id: "altizon",
     title: "Altizon Datonis",
@@ -159,8 +160,8 @@ them.",
     case_study: "/portfolio_pdf/altizon_datonis_case_study.pdf",
     display: true
   },
-  
-  
+=end
+
   {
     id: "brandscope",
     title: "Brandscope",
@@ -177,7 +178,7 @@ them.",
     case_study: "/portfolio_pdf/brandscope_case_study.pdf",
     display: true
   },
-
+=begin
   {
     id: "educade",
     title: "Educade",
@@ -194,7 +195,7 @@ them.",
     case_study: "/portfolio_pdf/educade_case_study.pdf",
     display: true
   },
-
+=end
 
   {
     id: "phalcomm",
@@ -204,7 +205,7 @@ them.",
     year: "2013",
     url: "http://erp.phalcomm.com",
     image: "phalcomm-scaled.png",
-    description: "Phalcomm is an E-Commerce Platform which offers online buying of real estate, real time brokerage and generates project specific report. It is used by over 500+ distributor and agents of phalcomm. Software provides real time information of about various bookings in progress across the nation and thus avoid double booking of same property. It also tracks the workflow from booking till allotment of the unit to customer. 
+    description: "Phalcomm is an E-Commerce Platform which offers online buying of real estate, real time brokerage and generates project specific report. It is used by over 500+ distributor and agents of phalcomm. Software provides real time information of about various bookings in progress across the nation and thus avoid double booking of same property. It also tracks the workflow from booking till allotment of the unit to customer.
     System is very rich in reports to help ground staff and management as well to take decisions based on the total sale by various distributors, enquiry to sale conversion ratio, demands in the market etc. Reports are also supported by various graphs for better visual understanding and comparison.",
     technical: {
         comments: "",
@@ -230,7 +231,7 @@ them.",
     display: true
   },
 
-  { 
+  {
     id: "cleartrip",
     title: "ClearTrip",
     country: "India",
@@ -245,7 +246,6 @@ them.",
     },
     display: true
   },
-=end
   {
     id: "tourconnect",
     title: "TourConnect",
@@ -256,8 +256,8 @@ them.",
     image: "tourconnect.png",
     description: "TourConnect makes managing rates and contracting quick and easy! TourConnect communicates what the Supplier product is and how much it's going to cost each Contractor",
     technical: {
-        comments: "",
-        tags: ["Rails 3.2.21", "Mongoid 3.1.6", "Authorize.Net", "ActiveAdmin", "React", "Flux", "Backbone", "Node JS"]
+      comments: "",
+      tags: ["Rails 3.2.21", "Mongoid 3.1.6", "Authorize.Net", "ActiveAdmin", "React", "Flux", "Backbone", "Node JS"]
 
     },
     case_study: "/portfolio_pdf/TourConnectCaseStudy.pdf",
@@ -274,11 +274,12 @@ them.",
     image: "1factory-scaled.png",
     description: "1Factory is a portal that manages the quality control process for multi-tiered supply chain. This is a multi-tenant application with a lot of impetus on security.",
     technical: {
-        comments: "",
-        tags: ["Rails 3.1", "PostgreSQL", "Heroku Cedar Stack"]
+      comments: "",
+      tags: ["Rails 3.1", "PostgreSQL", "Heroku Cedar Stack"]
     },
     display: true
   },
+=end
 =begin
   {
     id: "groupgyaan",
@@ -327,7 +328,7 @@ them.",
     },
     display: true
   },
-  
+
 =end
   {
     id: "acemoney",
