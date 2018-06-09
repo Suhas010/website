@@ -9,6 +9,7 @@ Website: http://thevectorlab.net/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
 @import url(http://fonts.googleapis.com/css?family=Fjalla+One);
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:900);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 
 /*colors as in josh logo
 dark-red #D3403C
@@ -18,7 +19,7 @@ darkest-red #6B1809
 
 body {
   color: #797979;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif !important;
   padding: 0px !important;
   margin: 0px !important;
   font-size:15px;
@@ -95,6 +96,10 @@ p {line-height: 22px}
   background: none;
 }
 
+
+
+
+
 .header-frontend .nav li a:hover,
 .header-frontend .nav li a:focus,
 .header-frontend .nav li.active a,
@@ -103,8 +108,8 @@ p {line-height: 22px}
 .header-frontend .nav li a.dropdown-toggle:focus,
 .header-frontend .nav li.active ul.dropdown-menu li a:hover,
 .header-frontend .nav li.active ul.dropdown-menu li.active a{
-  color: white ;
-  background-color: #D3403C; /*navbar links pill color*/
+  color: #333333 ;
+  background-color: #ffffff; /*navbar links pill color*/
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
@@ -116,8 +121,8 @@ p {line-height: 22px}
 .header-frontend .navbar-default .navbar-nav > .open > a,
 .header-frontend .navbar-default .navbar-nav > .open > a:hover,
 .header-frontend .navbar-default .navbar-nav > .open > a:focus {
-  color: #fff;
-  background-color: #D3403C;
+  color: #333333;
+  background-color: #ffffff;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
@@ -148,6 +153,22 @@ p {line-height: 22px}
   -ms-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
+}
+
+.header-frontend .nav li.active a {
+  color: #D3403C;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #ffffff;
+}
+
+.header-frontend .nav li a {
+  color: #333333;
+}
+
+.header-frontend .nav li a:hover, .header-frontend .nav li.active a:hover {
+  background-color: #ffffff;
+  color: #D3403C;
 }
 
 
@@ -1297,10 +1318,10 @@ ul.about-flex-slides {
 }
 
 .blog-item h1, .blog-item h1 a {
-  font-size:25px;
-  color: #D3403C;
+  font-size: 24px;
+  color: #666666;
   font-weight: 300;
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Open Sans', sans-serif !important;
 }
 
 .news_header h1 {font-size: 25px; color: #D3403C; font-weight: 300; font-family: 'Fjalla One', sans-serif;}
@@ -1963,4 +1984,8 @@ ul#filters > .active > span {
 /*  portfolio modal heading padding-bottom 0 */
 .no-padding-bottom {
   padding-bottom: 0!important;
+}
+
+.open-sans-light {
+  font-family: 'Open Sans', sans-serif !important;
 }

@@ -22,14 +22,6 @@
         margin-left: 0;
     }
 
-    .header-frontend .nav li a:hover,
-    .header-frontend .nav li a:focus,
-    .header-frontend .nav li a.dropdown-toggle:focus,
-    .header-frontend .nav li a.dropdown-toggle .dropdown-menu li a:hover,
-    .header-frontend .nav li.active a,
-    .header-frontend .dropdown-menu li a:hover {
-        color: #fff !important;
-    }
 
     .header-frontend .navbar-nav > li {
         padding: 0;
