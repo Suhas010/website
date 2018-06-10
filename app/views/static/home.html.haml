@@ -1,54 +1,66 @@
-#myCarousel.carousel.slide{"data-ride" => "carousel"}
+#bannerCarousel.carousel.slide{"data-ride" => "carousel"}
   %ol.carousel-indicators
-    %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
-    %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
-    %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
+    %li.active{"data-slide-to" => "0", "data-target" => "#bannerCarousel"}
+    %li{"data-slide-to" => "1", "data-target" => "#bannerCarousel"}
+    %li{"data-slide-to" => "2", "data-target" => "#bannerCarousel"}
   .carousel-inner.height-480
     .item.active
       .typewriter
-        %h1 INOVATION
-        %h1.blue-color IS OUR CULTURE
-
-    .item
-      .typewriter
         %h1
-          TECHNOLOGY
+          %span TECHNOLOGY
           %span.blue-color EXPERTS
         %h1
           %span.blue-color SOLUTION
-          PROVIDERS
+          %span PROVIDERS
+        %span.banner-links
+          %a{href: "portfolio"}
+            = image_tag "Banner Arrow.png", class: "width-10"
+            %span Checkout our work
 
     .item
       .typewriter
         %h1 OPEN SOURCE
         %h1.blue-color IS REWARDED HERE
 
+        %span.banner-links
+          %a{href: "open_source"}
+            = image_tag "Banner Arrow.png", class: "width-10"
+            %span Find out more
         // %h1
         // %button.btn.btn-default CONTACT US
+
+    .item
+      .typewriter
+        %h1 INOVATION
+        %h1.blue-color IS OUR CULTURE
+        %span.banner-links
+          %a{href: "contact_us"}
+            = image_tag "Banner Arrow.png", class: "width-10"
+            %span Get in touch with us
+
 
 
 .container
   .row.d-flex.justify-content-center.page-header
-    .col-xs-4.col-md-3.flex-direction-column
-      %a.thumbnail.no-padding{:href => "#"}
-        = image_tag "Card image grp 01.png"
+    .col-xs-4.col-md-4.flex-direction-column
+      = image_tag "Card image grp 01.png", class: "thumbnail no-padding hvr-grow"
       = link_to "OPEN SOURCE", 'open-source', class: "btn btn-default white-button margin-top-15"
 
 
-    .col-xs-4.col-md-3.flex-direction-column
-      %a.thumbnail.no-padding{:href => "#"}
-        = image_tag "Card image grp 02.png"
+    .col-xs-4.col-md-4.flex-direction-column
+      = image_tag "Card image grp 02.jpg", class: "thumbnail no-padding hvr-grow"
       = link_to "OUR WORK", 'portfolio', class: "btn btn-default white-button margin-top-15"
-    .col-xs-4.col-md-3.flex-direction-column
-      %a.thumbnail.no-padding{:href => "#"}
-        = image_tag "Card image grp 03.png"
+    .col-xs-4.col-md-4.flex-direction-column
+      = image_tag "Card image grp 03.jpg", class: "thumbnail no-padding hvr-grow"
       = link_to "CONTACT US", 'contact_us', class: "btn btn-default white-button margin-top-15"
 
 %br
 .container
-  %hr
+  .row
+    .col-md-12.col-xs-12
+      = image_tag "contactUs.jpg", class: "thumbnail no-padding hvr-grow"
 
-.container
+.container.margin-top-15
   .row
     %h1
       %center
@@ -57,44 +69,44 @@
   .row
     .col-md-2
     .col-md-2
-      = image_tag "client_logos/star.png"
+      = image_tag "client_logos/star.png", class: "hvr-grow"
     .col-md-2
-      = image_tag "client_logos/druva.png"
+      = image_tag "client_logos/druva.png", class: "hvr-grow"
     .col-md-2
-      = image_tag "client_logos/go-jek.png"
+      = image_tag "client_logos/go-jek.png", class: "hvr-grow"
     .col-md-2
-      = image_tag "client_logos/dealsignal.png"
+      = image_tag "client_logos/dealsignal.png", class: "hvr-grow"
     .col-md-2
   .row
     .col-md-2
     .col-md-2
-      = image_tag "client_logos/brandscope.png"
+      = image_tag "client_logos/brandscope.png", class: "hvr-grow"
     .col-md-2
-      = image_tag "client_logos/clubbuzz.png"
+      = image_tag "client_logos/clubbuzz.png", class: "hvr-grow"
     .col-md-2
-      = image_tag "client_logos/cubic_tree.png"
+      = image_tag "client_logos/cubic_tree.png", class: "hvr-grow"
     .col-md-2
-      = image_tag "client_logos/we3.png"
+      = image_tag "client_logos/we3.png", class: "hvr-grow"
   .row
     .col-md-2
     .col-md-2
-      = image_tag "client_logos/tpn.png"
+      = image_tag "client_logos/tpn.png", class: "hvr-grow"
     .col-md-2
-      = image_tag "client_logos/ffd.png"
+      = image_tag "client_logos/ffd.png", class: "hvr-grow"
     .col-md-2
-      = image_tag "client_logos/synergy.png"
+      = image_tag "client_logos/synergy.png", class: "hvr-grow"
     .col-md-2
-      = image_tag "client_logos/mdn.png"
+      = image_tag "client_logos/mdn.png", class: "hvr-grow"
   .row
     .col-md-2
     .col-md-2
-      = image_tag "client_logos/fundamentor.png"
+      = image_tag "client_logos/fundamentor.png", class: "hvr-grow"
     .col-md-2
-      = image_tag "client_logos/inmaited.png"
+      = image_tag "client_logos/inmaited.png", class: "hvr-grow"
     .col-md-2
-      = image_tag "client_logos/kwik-kopy.png"
+      = image_tag "client_logos/kwik-kopy.png", class: "hvr-grow"
     .col-md-2
-      = image_tag "client_logos/dealsignal.png"
+      = image_tag "client_logos/dealsignal.png", class: "hvr-grow"
   %br
   .row
     %center
