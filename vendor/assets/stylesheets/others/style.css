@@ -136,8 +136,8 @@ p {line-height: 22px}
 }
 
 .header-frontend .navbar-nav > li  {
-  padding-bottom: 20px;
-  padding-top: 20px;
+  /* padding-bottom: 20px; */
+  padding-top: 38px;
 }
 
 .header-frontend  .navbar-nav > li > a {
@@ -1371,7 +1371,7 @@ ul.about-flex-slides {
 
 .blog-side-item ul li {
   margin-bottom: 5px;
-  border-bottom:1px solid #D3403C; /* side list*/
+  border-bottom:1px solid #cccccc; /* side list*/
   line-height: 35px;
 }
 
@@ -1448,7 +1448,7 @@ ul.tagg li {
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 20px;
-  font-family: 'Fjalla One', sans-serif;
+  /* font-family: 'Fjalla One', sans-serif; */
 }
 
 
@@ -1988,4 +1988,8 @@ ul#filters > .active > span {
 
 .open-sans-light {
   font-family: 'Open Sans', sans-serif !important;
+}
+
+.width-94 {
+  width: 94%!important;
 }

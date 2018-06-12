@@ -13,7 +13,7 @@
           %span.blue-color SOLUTION
           %span PROVIDERS
         %span.banner-links
-          %a{href: "portfolio"}
+          %a.hvr-grow{href: "portfolio"}
             = image_tag "Banner Arrow.png", class: "width-10"
             %span Checkout our work
 
@@ -23,7 +23,7 @@
         %h1.blue-color IS REWARDED HERE
 
         %span.banner-links
-          %a{href: "open_source"}
+          %a.hvr-grow{href: "open_source"}
             = image_tag "Banner Arrow.png", class: "width-10"
             %span Find out more
         // %h1
@@ -34,78 +34,98 @@
         %h1 INOVATION
         %h1.blue-color IS OUR CULTURE
         %span.banner-links
-          %a{href: "contact_us"}
+          %a.hvr-grow{href: "contact_us"}
             = image_tag "Banner Arrow.png", class: "width-10"
             %span Get in touch with us
 
 
 
-.container
+.container#three-images
   .row.d-flex.justify-content-center.page-header
-    .col-xs-4.col-md-4.flex-direction-column
-      = image_tag "Card image grp 01.png", class: "thumbnail no-padding hvr-grow"
+    .col-xs-4.col-md-3.flex-direction-column
+
+      %a{href: "/open_source"}
+        = image_tag "Card image grp 01.png", class: "thumbnail no-padding width-100"
       = link_to "OPEN SOURCE", 'open-source', class: "btn btn-default white-button margin-top-15"
 
 
-    .col-xs-4.col-md-4.flex-direction-column
-      = image_tag "Card image grp 02.jpg", class: "thumbnail no-padding hvr-grow"
+    .col-xs-4.col-md-3.flex-direction-column
+      %a{href: "/portfolio"}
+        = image_tag "Card image grp 02.jpg", class: "thumbnail no-padding width-100"
       = link_to "OUR WORK", 'portfolio', class: "btn btn-default white-button margin-top-15"
-    .col-xs-4.col-md-4.flex-direction-column
-      = image_tag "Card image grp 03.jpg", class: "thumbnail no-padding hvr-grow"
+    .col-xs-4.col-md-3.flex-direction-column
+      %a{href: "/contact-us"}
+        = image_tag "Card image grp 03.jpg", class: "thumbnail no-padding width-100"
       = link_to "CONTACT US", 'contact_us', class: "btn btn-default white-button margin-top-15"
 
-%br
 .container
   .row
+    %br
+    %br
+    %br
     .col-md-12.col-xs-12
-      = image_tag "contactUs.jpg", class: "thumbnail no-padding hvr-grow"
+      %a{href: "contact-us"}
+        = image_tag "contactUs.jpg", class: "thumbnail no-padding width-100"
+
 
 .container.margin-top-15
   .row
+    %br
+    %br
     %h1
       %center
         %b.client-header Our Clients
 
   .row
     .col-md-2
-    .col-md-2
+    .col-md-2.col-xs-6
       = image_tag "client_logos/star.png", class: "hvr-grow"
-    .col-md-2
+    .col-md-2.col-xs-6
       = image_tag "client_logos/druva.png", class: "hvr-grow"
-    .col-md-2
+    .col-md-2.col-xs-6
       = image_tag "client_logos/go-jek.png", class: "hvr-grow"
-    .col-md-2
+    .col-md-2.col-xs-6
       = image_tag "client_logos/dealsignal.png", class: "hvr-grow"
     .col-md-2
   .row
     .col-md-2
-    .col-md-2
+    .col-md-2.col-xs-6
       = image_tag "client_logos/brandscope.png", class: "hvr-grow"
-    .col-md-2
+    .col-md-2.col-xs-6
       = image_tag "client_logos/clubbuzz.png", class: "hvr-grow"
-    .col-md-2
+    .col-md-2.col-xs-6
       = image_tag "client_logos/cubic_tree.png", class: "hvr-grow"
-    .col-md-2
+    .col-md-2.col-xs-6
       = image_tag "client_logos/we3.png", class: "hvr-grow"
   .row
     .col-md-2
-    .col-md-2
+    .col-md-2.col-xs-6
       = image_tag "client_logos/tpn.png", class: "hvr-grow"
-    .col-md-2
+    .col-md-2.col-xs-6
       = image_tag "client_logos/ffd.png", class: "hvr-grow"
-    .col-md-2
+    .col-md-2.col-xs-6
       = image_tag "client_logos/synergy.png", class: "hvr-grow"
-    .col-md-2
+    .col-md-2.col-xs-6
       = image_tag "client_logos/mdn.png", class: "hvr-grow"
   .row
     .col-md-2
-    .col-md-2
+    .col-md-2.col-xs-6
       = image_tag "client_logos/fundamentor.png", class: "hvr-grow"
-    .col-md-2
+    .col-md-2.col-xs-6
       = image_tag "client_logos/inmaited.png", class: "hvr-grow"
+    .col-md-2.col-xs-6
+      = image_tag "client_logos/zenith.jpg", class: "hvr-grow "
+    .col-md-2.col-xs-6
+      = image_tag "client_logos/dealWeel.png", class: "hvr-grow"
+  .row
     .col-md-2
-      = image_tag "client_logos/kwik-kopy.png", class: "hvr-grow"
-    .col-md-2
+    .col-md-2.col-xs-6
+      = image_tag "client_logos/arthimpact.png", class: "hvr-grow"
+    .col-md-2.col-xs-6
+      = image_tag "client_logos/tourconnect.png", class: "hvr-grow"
+    .col-md-2.col-xs-6
+      = image_tag "client_logos/quickInsure.png", class: "hvr-grow "
+    .col-md-2.col-xs-6
       = image_tag "client_logos/dealsignal.png", class: "hvr-grow"
   %br
   .row

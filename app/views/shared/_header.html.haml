@@ -11,26 +11,29 @@
             = image_tag 'JOSHSoftware_LogoStack_Color_org.png', alt: 'Josh Software'
       .navbar-collapse.collapse
         %ul.nav.navbar-nav
-          %li{class: "#{check_if_active('home')} hvr-grow"}
+          %li{class: "#{check_if_active('/')}"}
             = link_to 'Home', root_path
-          %li{class: "#{check_if_active('Josh in News')} hvr-grow"}
-            = link_to 'Josh in News', news_path
-            /%a{:href => "news"} Josh in News
-          %li{class: "#{check_if_active('portfolio')} hvr-grow"}
-            = link_to 'Portfolio', portfolio_path
-            /%a{:href => "portfolio"} Portfolio
-          %li{class: "#{check_if_active('testimonials')} hvr-grow"}
-            = link_to 'Testimonials', testimonials_path
-            /%a{:href => "testimonials"} Testimonials
-          %li{class: "#{check_if_active('open_source')} hvr-grow"}
+
+          %li{class: "#{check_if_active('/open-source')}"}
             = link_to 'Open Source', open_source_path
             /%a{:href => "open-source"} Open Source
-          %li{class: "#{check_if_active('team')} hvr-grow"}
-            = link_to 'Team', team_path
-            /%a{:href => "team"} Team
+
+          %li{class: "#{check_if_active('/portfolio')}"}
+            = link_to 'Portfolio', portfolio_path
+            /%a{:href => "portfolio"} Portfolio
+
+          %li{class: "#{check_if_active('/testimonials')}"}
+            = link_to 'Testimonials', testimonials_path
+            /%a{:href => "testimonials"} Testimonials
+
           %li
             %a{:href => "http://blog.joshsoftware.com/", target: '_blank'} Blog
-          %li{class: "#{check_if_active('contact_us')} hvr-grow"}
+
+          %li{class: "#{check_if_active('/team')} "}
+            = link_to 'Team', team_path
+            /%a{:href => "team"} Team
+
+          %li{class: "#{check_if_active('/contact-us')} "}
             = link_to 'Contact Us', new_contact_path
           /
             %li
