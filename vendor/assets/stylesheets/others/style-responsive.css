@@ -8,8 +8,12 @@
     .portfolio-body {
         height: 800px;
     }
-    .mr-1{
+    .mr-5{
         margin-right: 0!important;
+    }
+
+    .page-header {
+        display: flex;
     }
 }
 
@@ -107,7 +111,7 @@
         height: 800px;
     }
 
-    .mr-1{
+    .mr-5{
         margin-right: 0!important;
     }
 
@@ -171,7 +175,7 @@
         height: 1000px;
     }
 
-    .mr-1{
+    .mr-5{
         margin-right: 0!important;
     }
 }

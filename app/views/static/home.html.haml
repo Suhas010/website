@@ -1,5 +1,4 @@
 #bannerCarousel.carousel.slide{"data-ride" => "carousel"}
-  = image_tag '10 years square.png', class: "years-10"
   %ol.carousel-indicators
     %li.active{"data-slide-to" => "0", "data-target" => "#bannerCarousel"}
     %li{"data-slide-to" => "1", "data-target" => "#bannerCarousel"}
@@ -42,23 +41,24 @@
 
 
 .container#three-images
-  .row.d-flex.justify-content-center.page-header
-    .col-xs-4.col-md-3.flex-direction-column
+  .row.page-header.mr-1
+    .col-md-2
+    .col-xs-12.col-md-3
 
       %a{href: "/open_source"}
-        = image_tag "Card image grp 01.png", class: "thumbnail no-padding width-100"
-      = link_to "OPEN SOURCE", 'open-source', class: "btn btn-default white-button margin-top-15"
+        = image_tag "Card image grp 01.png", class: "thumbnail no-padding"
+      = link_to "OPEN SOURCE", 'open-source', class: "btn btn-default white-button margin-top-15 width-100"
 
 
-    .col-xs-4.col-md-3.flex-direction-column
+    .col-xs-12.col-md-3
       %a{href: "/portfolio"}
-        = image_tag "Card image grp 02.jpg", class: "thumbnail no-padding width-100"
-      = link_to "OUR WORK", 'portfolio', class: "btn btn-default white-button margin-top-15"
-    .col-xs-4.col-md-3.flex-direction-column
+        = image_tag "Card image grp 02.jpg", class: "thumbnail no-padding "
+      = link_to "OUR WORK", 'portfolio', class: "btn btn-default width-100 white-button margin-top-15 width-100"
+    .col-xs-12.col-md-3
       %a{href: "/team"}
-        = image_tag "Card image grp 03.jpg", class: "thumbnail no-padding width-100"
-      = link_to "MEET OUR TEAM", 'team', class: "btn btn-default white-button margin-top-15"
-
+        = image_tag "Card image grp 03.jpg", class: "thumbnail no-padding "
+      = link_to "MEET OUR TEAM", 'team', class: "btn btn-default white-button width-100 margin-top-15"
+    .col-md-1
 .container
   .row
     %br
@@ -80,80 +80,80 @@
   .row
 
     .col-md-1
-    .col-md-2.col-xs-6.mr-1
+    .col-md-2.col-xs-6.mr-5
       %a{href: "http://www.startv.com/", target: "_blank"}
         = image_tag "client_logos/star.png", class: "hvr-grow"
-    .col-md-2.col-xs-6.mr-1
+    .col-md-2.col-xs-6.mr-5
       %a{href: "https://www.druva.com/", target: "_blank"}
         = image_tag "client_logos/druva.png", class: "hvr-grow"
-    .col-md-2.col-xs-6.mr-1
+    .col-md-2.col-xs-6.mr-5
       %a{href: "https://www.go-jek.com/", target: "_blank"}
         = image_tag "client_logos/go-jek.png", class: "hvr-grow"
-    .col-md-2.col-xs-6.mr-1
+    .col-md-2.col-xs-6.mr-5
       %a{href: "http://www.dealsignal.com/", target: "_blank"}
         = image_tag "client_logos/dealsignal.png", class: "hvr-grow"
     .col-md-2
   .row
     .col-md-1
-    .col-md-2.col-xs-6.mr-1
+    .col-md-2.col-xs-6.mr-5
       %a{href: "http://brandscope.com.au", target: "_blank"}
         = image_tag "client_logos/brandscope.png", class: "hvr-grow"
-    .col-md-2.col-xs-6.mr-1
+    .col-md-2.col-xs-6.mr-5
       %a{href: "http://www.clubbuzz.co.uk/", target: "_blank"}
         = image_tag "client_logos/clubbuzz.png", class: "hvr-grow"
-    .col-md-2.col-xs-6.mr-1
+    .col-md-2.col-xs-6.mr-5
       %a{href: "https://www.cubictree.com/", target: "_blank"}
         = image_tag "client_logos/cubic_tree.png", class: "hvr-grow"
-    .col-md-2.col-xs-6.mr-1
+    .col-md-2.col-xs-6.mr-5
       %a{href: "https://we3health.ucsf.edu/admin/", target: "_blank"}
         = image_tag "client_logos/we3.png", class: "hvr-grow"
   .row
     .col-md-1
-    .col-md-2.col-xs-6.mr-1
+    .col-md-2.col-xs-6.mr-5
       %a{href: "https://thepediatricnetwork.com/#/", target: "_blank"}
         = image_tag "client_logos/tpn.png", class: "hvr-grow"
-    .col-md-2.col-xs-6.mr-1
+    .col-md-2.col-xs-6.mr-5
       %a{href: "http://app.freedomfromdiabetes.org/", target: "_blank"}
         = image_tag "client_logos/ffd.png", class: "hvr-grow"
-    .col-md-2.col-xs-6.mr-1
+    .col-md-2.col-xs-6.mr-5
       %a{href: "http://www.synergydesignsolutions.com.sg/", target: "_blank"}
         = image_tag "client_logos/synergy.png", class: "hvr-grow"
-    .col-md-2.col-xs-6.mr-1
+    .col-md-2.col-xs-6.mr-5
       %a{href: "https://next.merchdirect.com/", target: "_blank"}
         = image_tag "client_logos/mdn.png", class: "hvr-grow"
   .row
     .col-md-1
-    .col-md-2.col-xs-6.mr-1
+    .col-md-2.col-xs-6.mr-5
       %a{href: "https://fundamentor.com", target: "_blank"}
         = image_tag "client_logos/fundamentor.png", class: "hvr-grow"
-    .col-md-2.col-xs-6.mr-1
+    .col-md-2.col-xs-6.mr-5
       %a{href: "https://www.inmateaid.com/", target: "_blank"}
         = image_tag "client_logos/inmaited.png", class: "hvr-grow"
-    .col-md-2.col-xs-6.mr-1
+    .col-md-2.col-xs-6.mr-5
       %a{href: "http://www.skoutdeals.com", target: "_blank"}
         = image_tag "client_logos/dealWeel.png", class: "hvr-grow"
-    .col-md-2.col-xs-6.mr-1
+    .col-md-2.col-xs-6.mr-5
       %a{href: "https://www.kwikkopy.com.au/", target: "_blank"}
         = image_tag "client_logos/zenith.png", class: "hvr-grow "
 
   .row
     .col-md-1
-    .col-md-2.col-xs-6.mr-1
+    .col-md-2.col-xs-6.mr-5
       %a{href: "https://quickinsure.co.in/", target: "_blank"}
         = image_tag "client_logos/quickInsure.png", class: "hvr-grow "
-    .col-md-2.col-xs-6.mr-1
+    .col-md-2.col-xs-6.mr-5
       %a{href: "https://www.arthimpact.com/", target: "_blank"}
         = image_tag "client_logos/arthimpact.png", class: "hvr-grow"
-    .col-md-2.col-xs-6.mr-1
+    .col-md-2.col-xs-6.mr-5
       %a{href: "https://www.tourconnect.com/", target: "_blank"}
         = image_tag "client_logos/tourconnect.png", class: "hvr-grow"
 
-    .col-md-2.col-xs-6.mr-1
+    .col-md-2.col-xs-6.mr-5
       %a{href: "https://sahailife.com/", target: "_blank"}
         = image_tag "client_logos/sahaiLife.png", class: "hvr-grow"
   %br
   .row
     %center
-      = link_to "VIEW TESTIMONIALS", "testimonials", class: "btn btn-default white-button margin-top-15 width-22"
+      = link_to "VIEW TESTIMONIALS", "testimonials", class: "btn btn-default white-button margin-top-15"
 %br
 
