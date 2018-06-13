@@ -178,6 +178,9 @@
     .mr-5{
         margin-right: 0!important;
     }
+    .height-480 {
+        height: 320px!important;
+    }
 }
 
 @media (max-width:320px) {

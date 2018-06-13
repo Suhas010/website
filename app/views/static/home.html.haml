@@ -41,24 +41,22 @@
 
 
 .container#three-images
-  .row.page-header.mr-1
-    .col-md-2
-    .col-xs-12.col-md-3
+  .row.page-header
+    .col-xs-12.col-md-4
 
       %a{href: "/open_source"}
         = image_tag "Card image grp 01.png", class: "thumbnail no-padding"
-      = link_to "OPEN SOURCE", 'open-source', class: "btn btn-default white-button margin-top-15 width-100"
+      = link_to "OPEN SOURCE", 'open-source', class: "btn btn-default white-button margin-top-15 width-94"
 
 
-    .col-xs-12.col-md-3
+    .col-xs-12.col-md-4
       %a{href: "/portfolio"}
         = image_tag "Card image grp 02.jpg", class: "thumbnail no-padding "
-      = link_to "OUR WORK", 'portfolio', class: "btn btn-default width-100 white-button margin-top-15 width-100"
-    .col-xs-12.col-md-3
+      = link_to "OUR WORK", 'portfolio', class: "btn btn-default width-94 white-button margin-top-15"
+    .col-xs-12.col-md-4
       %a{href: "/team"}
         = image_tag "Card image grp 03.jpg", class: "thumbnail no-padding "
-      = link_to "MEET OUR TEAM", 'team', class: "btn btn-default white-button width-100 margin-top-15"
-    .col-md-1
+      = link_to "MEET OUR TEAM", 'team', class: "btn btn-default white-button width-94 margin-top-15"
 .container
   .row
     %br
