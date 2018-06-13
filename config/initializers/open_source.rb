@@ -1,5 +1,13 @@
 OPEN_SOURCE= [
   {
+    id: "code-curiosity",
+    title: "Code Curiosity",
+    url: "https://codecuriosity.org/",
+    details: "CodeCuriosity is a platform that encourages contributions to open source. Everyone is rewarded for their efforts, no matter how big or small they are. This is not a 'winner takes all' competition. CodeCuriosity rewards code commits, opening or commenting on issues and even consistency in open source contribution. In short, we create healthy competition among contributors that gives them the incentive to contribute. Our aim is to make open source contribution a habit!",
+    display: true
+
+  },
+  {
     id: "donation-management",
     title: "Donation Management software for Seva Sahayog",
     url: "https://github.com/joshsoftware/donation_management",
@@ -22,10 +30,10 @@ OPEN_SOURCE= [
       user: 'jiren',
       repo: 'filter.js'
     },
-    details: "Filter.js is the javascript library for client-side searches. It has multiple filter criteria that can be specified and used in conjunction with each other. It has easy integration with jQuery templates and mustache. See the demo <a href='http://jiren.github.com/filter.js/filterjs.html' target='_blank'>here</a> <br> Its been covered by <a href='http://webscripts.softpedia.com/script/Forms-and-Controls-C-C/Filter-js-71265.html' target='_blank'>Softpedia</a> and <a href='http://twitter.com/smashingmag/status/122082466726019072' target='_blank'>Smashing Magazine</a>", 
+    details: "Filter.js is the javascript library for client-side searches. It has multiple filter criteria that can be specified and used in conjunction with each other. It has easy integration with jQuery templates and mustache. See the demo <a href='http://jiren.github.com/filter.js/filterjs.html' target='_blank'>here</a> <br> Its been covered by <a href='http://webscripts.softpedia.com/script/Forms-and-Controls-C-C/Filter-js-71265.html' target='_blank'>Softpedia</a> and <a href='http://twitter.com/smashingmag/status/122082466726019072' target='_blank'>Smashing Magazine</a>",
     display: true
   },
-  
+
   {
     id: "sso-devise-omniauth",
     title: "Single Sign On using Devise and Omniauth",
@@ -34,14 +42,14 @@ OPEN_SOURCE= [
       user: 'joshsoftware',
       repo: 'sso-devise-omniauth-provider'
     },
-    details: "We wanted to solve these problems:<br><ul>
+    details: "We wanted to solve these problems:<br><ul style='margin-left: 50px;'>
       <li>A single User Manager application (which will authenticate ALL users with different roles)</li>
       <li>Different internal applications which talk to User Manager for authentication</li>
       <li>User should be able to login/sign-up via Social Networks like Twitter and Facebook.</li>
       <li>Single Sign On between all applications.</li>",
     display: true
   },
-  
+
   {
     id: "streamtablejs",
     title: "StreamTable.js",
@@ -149,7 +157,7 @@ OPEN_SOURCE= [
     details: "We have been helping blitz.io update their gem with peripheral functionality. This is as part of Open Source Friday meetups.",
     display: true
   },
-    
+
   {
     id: "Bidder",
     title: "Bidder",
