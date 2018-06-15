@@ -159,15 +159,15 @@
 
 
     .typewriter h1:nth-child(2){
-        top: 150px!important;
+        top: 115px!important;
     }
 
     .typewriter h1:nth-child(3) {
-        top: 200px!important;
+        top: 165px!important;
     }
 
     .banner-links {
-        top: 250px!important;
+        top: 200px!important;
         font-size: 18px!important;
     }
 
