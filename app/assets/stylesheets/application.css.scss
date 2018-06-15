@@ -201,11 +201,11 @@
   color: #333333;
 }
 
-#three-images img{
+#three-images img, .contact-us img{
   opacity: 1;
 }
 
-#three-images img:hover{
+#three-images img:hover, .contact-us img:hover{
   opacity: 0.3;
 }
 
