@@ -4,8 +4,11 @@ OPEN_SOURCE= [
     title: "Code Curiosity",
     url: "https://codecuriosity.org/",
     details: "CodeCuriosity is a platform that encourages contributions to open source. Everyone is rewarded for their efforts, no matter how big or small they are. This is not a 'winner takes all' competition. CodeCuriosity rewards code commits, opening or commenting on issues and even consistency in open source contribution. In short, we create healthy competition among contributors that gives them the incentive to contribute. Our aim is to make open source contribution a habit!",
-    display: true
-
+    display: true,
+    github: {
+      user: 'joshsoftware',
+      repo: 'code-curiosity'
+    },
   },
   {
     id: "donation-management",
