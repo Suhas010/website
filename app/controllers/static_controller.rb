@@ -1,5 +1,5 @@
 class StaticController < ApplicationController
-  
+
   before_action :load_tweet
   caches_page :portfolio, :team, :testimonials, :open_source
 
@@ -15,7 +15,7 @@ class StaticController < ApplicationController
   def home
     @testimonials = TESTIMONIES.select{|e| e[:display]}
     @projects = PROJECTS.select { |p| p[:display] }
-    @title = 'Ruby on Rails experts in India | Josh Software Private Limited'
+    @title = "Technology Expert Solution Providers in India | Josh Software Private Limited"
   end
 
   def testimonials
@@ -56,8 +56,8 @@ class StaticController < ApplicationController
   end
 
   def update_tweet
-    # On local 
-    #@@latest_tweet = Tweet.latest_tweet if request.remote_ip == request.env['REMOTE_ADDR'] 
+    # On local
+    #@@latest_tweet = Tweet.latest_tweet if request.remote_ip == request.env['REMOTE_ADDR']
     #
     #On production server
     @@latest_tweet = Tweet.latest_tweet if request.remote_ip == ENV['SERVER_ADDR']
